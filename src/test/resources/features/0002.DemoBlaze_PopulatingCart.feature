@@ -9,4 +9,3 @@ Feature: Registered user add's items to cart
   Examples:
     |total|
     |880  |
-

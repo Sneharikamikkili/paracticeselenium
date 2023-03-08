@@ -8,7 +8,6 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 import za.co.demoblaze.pageobjects.DemoBlaze_SignUp_Objects;
 
-
 public class DemoBlaze_0001_AccountCreation extends DemoBlaze_BaseClass{
 
     public DemoBlaze_0001_AccountCreation() {

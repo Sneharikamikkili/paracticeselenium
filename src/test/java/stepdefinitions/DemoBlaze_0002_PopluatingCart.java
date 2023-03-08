@@ -18,7 +18,6 @@ public class DemoBlaze_0002_PopluatingCart extends DemoBlaze_BaseClass {
         getmobileprice = demoBlaze_addItemsToCart.UserSelectsNexusMobileFlowJourney();
         System.out.println(getmobileprice);
     }
-
     @Given("^Asus devices to cart successfully$")
     public void asus_devices_to_cart_successfully() throws InterruptedException {
         getmonitorprice= demoBlaze_addItemsToCart.UserSelectcMonitorFlowJourney();

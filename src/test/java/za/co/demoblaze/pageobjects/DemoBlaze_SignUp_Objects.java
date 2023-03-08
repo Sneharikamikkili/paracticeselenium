@@ -12,8 +12,6 @@ public class DemoBlaze_SignUp_Objects extends DemoBlaze_BaseClass {
     public DemoBlaze_SignUp_Objects(WebDriver driver)
     {super(driver);}
 
-
-
     @FindBy(id = "signin2")
     @CacheLookup
     WebElement signup;

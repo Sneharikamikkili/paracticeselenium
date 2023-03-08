@@ -168,7 +168,6 @@ public class DemoBlaze_AddItemsToCart extends DemoBlaze_BaseClass {
         demoBlazeWaitforelement(getCart());
         getCart().click();
     }
-
     public void UserSelectPlaceOrder()
     {
         getGetplaceorder().click();

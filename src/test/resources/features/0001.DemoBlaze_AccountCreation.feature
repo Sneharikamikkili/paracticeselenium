@@ -7,7 +7,6 @@ Feature: OnBoarding clients on Demoblaze application
     And register user logins successfully with "<username>" and "<password>"
 
 
-
     Examples:
       |username|password|message|
       |demoblazeuserks114|windows123|Sign up successful.|

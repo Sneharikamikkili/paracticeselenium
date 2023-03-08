@@ -13,7 +13,6 @@ public class DemoBlaze_FinalizePayment extends DemoBlaze_BaseClass {
     {super(driver);}
 
 
-
     @FindBy(id = "name")
     @CacheLookup
     WebElement nameofclient;

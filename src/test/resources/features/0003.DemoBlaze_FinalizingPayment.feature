@@ -8,7 +8,6 @@ Feature: Customer Finalizing payment
     Then i should see order id getting displayed successfully
 
 
-
     Examples:
       |name|country|city|creditCard|month|year|
       |sneha|southafrica|jhb|569874521365884|03|2023|

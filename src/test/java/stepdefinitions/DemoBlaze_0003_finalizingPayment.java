@@ -17,7 +17,6 @@ public class DemoBlaze_0003_finalizingPayment extends DemoBlaze_BaseClass {
         demoBlaze_addItemsToCart = new DemoBlaze_AddItemsToCart(wdriver);
         demoBlaze_finalizePayment = new DemoBlaze_FinalizePayment(wdriver);
         demoBlaze_addItemsToCart.UserSelectPlaceOrder();
-
     }
 
     @Given("^i have captured \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")

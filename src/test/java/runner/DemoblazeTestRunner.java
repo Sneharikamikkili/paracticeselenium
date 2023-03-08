@@ -6,7 +6,6 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import stepdefinitions.DemoBlaze_BaseClass;
-
 import java.io.IOException;
 
 @RunWith(Cucumber.class)
