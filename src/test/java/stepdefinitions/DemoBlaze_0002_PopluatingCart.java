@@ -11,11 +11,11 @@ public class DemoBlaze_0002_PopluatingCart extends DemoBlaze_BaseClass {
     private static String getmobileprice;
     private static String getmonitorprice;
 
-    @Given("^registerd user adds nexusmobile$")
-    public void registerd_user_adds_nexusmobile() throws InterruptedException {
+    @Given("^registerd user adds nexusmobile \"([^\"]*)\" to cart$")
+    public void registerd_user_adds_nexusmobile_to_cart(String units) throws Throwable {
 
         demoBlaze_addItemsToCart = new DemoBlaze_AddItemsToCart(wdriver);
-        getmobileprice = demoBlaze_addItemsToCart.UserSelectsNexusMobileFlowJourney();
+        getmobileprice = demoBlaze_addItemsToCart.UserSelectsNexusMobileFlowJourney(units);
         System.out.println(getmobileprice);
     }
     @Given("^Asus devices to cart successfully$")

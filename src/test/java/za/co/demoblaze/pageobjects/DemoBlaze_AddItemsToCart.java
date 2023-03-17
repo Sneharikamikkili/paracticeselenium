@@ -108,13 +108,15 @@ public class DemoBlaze_AddItemsToCart extends DemoBlaze_BaseClass {
         }
     }
 
-    public void UserSelectsAddToCart()
+    public void UserSelectsAddToCart(String unit)
     {
         wdriver.navigate().refresh();
         DemoBlaze_BaseClass.demoBlazeWaitforelement(getAddtocart());
-        getAddtocart().click();
-        DemoBlaze_BaseClass.waitForalert();
-        DemoBlaze_BaseClass.AcceptAlert();
+        for(int i = 0; i<Integer.parseInt(unit); i++) {
+            getAddtocart().click();
+            DemoBlaze_BaseClass.waitForalert();
+            DemoBlaze_BaseClass.AcceptAlert();
+        }
 
     }
 
@@ -182,9 +184,9 @@ public class DemoBlaze_AddItemsToCart extends DemoBlaze_BaseClass {
 
     }
 
-    public String UserSelectsNexusMobileFlowJourney() throws InterruptedException {
+    public String UserSelectsNexusMobileFlowJourney(String units) throws InterruptedException {
         UserSelectsNexusMobile();
-        UserSelectsAddToCart();
+        UserSelectsAddToCart(units);
         String getprice = userGetsPrice();
         UserSelectHome();
         return getprice;

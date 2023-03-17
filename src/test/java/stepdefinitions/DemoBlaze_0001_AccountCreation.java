@@ -17,7 +17,6 @@ public class DemoBlaze_0001_AccountCreation extends DemoBlaze_BaseClass{
 
     @Given("^i have navaigated to stores site$")
     public void i_have_navaigated_to_stores_site() {
-
         userLaunchesDemoBlazeSite(endpoint);
         demoBlaze_signUp_objects = new DemoBlaze_SignUp_Objects(wdriver);
 

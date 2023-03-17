@@ -9,4 +9,4 @@ Feature: OnBoarding clients on Demoblaze application
 
     Examples:
       |username|password|message|
-      |demoblazeuserks114|windows123|Sign up successful.|
+      |demoblazeuserks132|windows123|Sign up successful.|

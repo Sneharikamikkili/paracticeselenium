@@ -36,7 +36,7 @@ public class DemoBlaze_0003_finalizingPayment extends DemoBlaze_BaseClass {
     public void i_should_see_order_id_getting_displayed_successfully() throws Throwable {
         demoBlaze_finalizePayment.UserValidatesSuccessMessage();
         String getorderid = demoBlaze_finalizePayment.UserExtractsOrderid();
-        System.out.println(getorderid);
+        System.out.println("the transaction order id is..."+getorderid);
 
     }
 }

@@ -147,7 +147,7 @@ public class DemoBlaze_BaseClass {
      */
     public static void demoBlazeWaitforelement(WebElement demoblazeelement)  {
 
-        WebDriverWait waitdemoblaze = new WebDriverWait(wdriver, Duration.ofSeconds(60));
+        WebDriverWait waitdemoblaze = new WebDriverWait(wdriver, 60);
         waitdemoblaze.until(ExpectedConditions.visibilityOf(demoblazeelement));
         waitdemoblaze.until(ExpectedConditions.elementToBeClickable(demoblazeelement));
     }
@@ -155,7 +155,7 @@ public class DemoBlaze_BaseClass {
 
     public static void waitForalert()
     {
-        new WebDriverWait(wdriver, Duration.ofSeconds(10))
+        new WebDriverWait(wdriver, 60)
                 .ignoring(NoAlertPresentException.class)
                 .until(ExpectedConditions.alertIsPresent());
     }
@@ -177,7 +177,7 @@ public class DemoBlaze_BaseClass {
 
    public static void demoblazeimplicitwait()
    {
-       wdriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+       wdriver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
    }
 
 
